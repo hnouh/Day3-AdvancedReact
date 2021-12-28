@@ -39,14 +39,14 @@ const ReduxEx = () => {
       <br></br>
       <br></br>
 
-      {state.posts.map((post) => {
+      {/* {state.posts.map((post) => {
         return (
           <>
             <h3>{post.userId}</h3>
             <p>{post.body}</p>
           </>
         );
-      })}
+      })} */}
     </>
   );
 };

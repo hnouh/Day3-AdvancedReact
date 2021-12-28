@@ -4,7 +4,7 @@ const NavBar=()=>{
     return (
         <>
         <Link to='/Counter' >Counter</Link><br></br>
-        <Link to='/Redux' >Redux</Link>
+        <Link to='/Redux' >Redux</Link><br></br>
         </>
     )
 }
