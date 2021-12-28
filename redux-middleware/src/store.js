@@ -8,6 +8,6 @@ import { myFirstMiddleWare,mySeconMiddleWare,myThirdMiddleWare } from "./middlew
 
 
 const reducers = combineReducers({ counter,posts });
-const store = createStore(reducers,applyMiddleware(myFirstMiddleWare,mySeconMiddleWare,myThirdMiddleWare,thunk));
+const store = createStore(reducers,applyMiddleware(myFirstMiddleWare,mySeconMiddleWare,myThirdMiddleWare,thunk,logger));
 // const store = createStore(reducers,composeWithDevTools(),applyMiddleware(myLogger,thirdMiddleware,logger,thunk));
 export default store;

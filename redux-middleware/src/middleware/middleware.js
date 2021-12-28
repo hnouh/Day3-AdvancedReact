@@ -15,25 +15,11 @@ export const mySeconMiddleWare=(store)=>(next)=>(action)=>{
 
 
 export const myThirdMiddleWare=(store)=>(next)=>(action)=>{
-    // if(store.getState().counter.counter<10){
-    //     return (next(action))
-    // }
+    // console.log("my third middleware")
     if(store.getState().counter.counter>=10){
-        if(action.type=="INCREASE"){
-            console.log("increase")
-            return next({type:"INCREASE", payload:20})
-        }
-        else if(action.type=="DEC-COUTER"){
-            console.log("DEC-COUTER")
-            return (next({type:"DEC-COUTER"}))
-        }
-        else{
-            console.log("reset")
-            return (next({type:"RESET-COUTER"}))
-        }
+        return next({type:"INCREASE", payload:20})
     }
     return (next(action))
-
 }
 
 
